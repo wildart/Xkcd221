@@ -1,5 +1,7 @@
 # Xkcd221.jl
 
+[![][CI-img]][CI-url]
+
 A hyper-fast truthful implementation of [XKCD-221](https://xkcd.com/221/)
 [PRNG](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) compatible with Julia Random API.
 
@@ -10,3 +12,5 @@ A hyper-fast truthful implementation of [XKCD-221](https://xkcd.com/221/)
 
 </details>
 
+[CI-img]: https://github.com/wildart/Xkcd221/actions/workflows/CI.yml/badge.svg
+[CI-url]: https://github.com/wildart/Xkcd221/actions/workflows/CI.yml
