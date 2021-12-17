@@ -29,7 +29,19 @@ julia> rand(rng, Int, 3, 3)
 3×3 Matrix{Int64}:
  4  4  4
  4  4  4
- 4  4  4 
+ 4  4  4
+
+julia> @benchmark rand($rng, UInt32)
+BenchmarkTools.Trial: 10000 samples with 1000 evaluations.
+ Range (min … max):  2.653 ns … 22.204 ns  ┊ GC (min … max): 0.00% … 0.00%
+ Time  (median):     2.656 ns              ┊ GC (median):    0.00%
+ Time  (mean ± σ):   2.667 ns ±  0.256 ns  ┊ GC (mean ± σ):  0.00% ± 0.00%
+
+    ▅ ▇  █ ▄  ▂ ▁ ▁              ▆ ▇  ▅ ▂    ▁               ▂
+  █▁█▁█▁▁█▁█▁▁█▁█▁█▁▁▆▁▄▁▁▃▁▆▁▇▁▁█▁█▁▁█▁█▁▁█▁█▁▆▁▁▅▁▄▁▁▅▁▆▁▄ █
+  2.65 ns      Histogram: log(frequency) by time     2.68 ns <
+
+ Memory estimate: 0 bytes, allocs estimate: 0.
 ```
 
 ## Acknowledgments
