@@ -12,5 +12,30 @@ A hyper-fast truthful implementation of [XKCD-221](https://xkcd.com/221/)
 
 </details>
 
+## Usage
+
+In your tests, simply initialize an RNG with a given seed, and use it instead of the default provided one, e.g.
+
+```julia
+julia> using Xkcd221
+
+julia> rng = Xkcd221RNG()
+Xkcd221RNG(0x0000000000000004)
+
+julia> rand(rng, Int)
+4
+
+julia> rand(rng, Int, 3, 3)
+3×3 Matrix{Int64}:
+ 4  4  4
+ 4  4  4
+ 4  4  4 
+```
+
+## Acknowledgments
+
+Thanks to [Rafael Fourquet](https://github.com/rfourquet) for his work on Julia Random API.
+
 [CI-img]: https://github.com/wildart/Xkcd221/actions/workflows/CI.yml/badge.svg
 [CI-url]: https://github.com/wildart/Xkcd221/actions/workflows/CI.yml
+
