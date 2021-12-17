@@ -1,0 +1,16 @@
+name = "Xkcd221"
+uuid = "f0d64554-2c51-441e-af95-4edf868dfe6b"
+authors = ["Art Wilde <wildart@gmail.com>"]
+version = "1.0.0"
+
+[deps]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+julia = "1.5"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
